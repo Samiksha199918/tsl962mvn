@@ -21,7 +21,8 @@ public class SeleniumDev {
   }
 
   @AfterTest
-  public void afterTest() {
+  public void afterTest() throws InterruptedException {
+	  Thread.sleep(5000);
 	  driver.close();
   }
 
